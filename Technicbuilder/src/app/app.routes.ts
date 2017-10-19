@@ -1,10 +1,10 @@
 import {
     Routes,
     RouterModule
-} from "@angular/router";
-import { NgModule } from "@angular/core";
+} from '@angular/router';
+import { NgModule } from '@angular/core';
 
-import { HomePage } from "./pages/home/home.page";
+import { HomePage } from './pages/home/home.page';
 
 export const allComponents = [
     HomePage
