@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import {
@@ -8,7 +9,7 @@ import {
 } from './app.routes';
 import { HomePage } from './pages/home/home.page';
 import { HeaderWidget } from './widgets/header/header.widget';
-import { RegisterComponent } from './widgets/register/register.component';
+import { RegisterWidget } from './widgets/register/register.widget';
 import { TestService } from './services/test/test.service';
 
 
@@ -17,11 +18,12 @@ import { TestService } from './services/test/test.service';
     AppComponent,
     ...allComponents,
     HeaderWidget,
-    RegisterComponent,
+    RegisterWidget,
   ],
   imports: [
     BrowserModule,
-    MainRoutingModule
+    MainRoutingModule,
+    FormsModule
   ],
   providers: [TestService],
   bootstrap: [AppComponent]

@@ -7,7 +7,7 @@ import { BehaviorSubject } from 'rxjs/Rx';
 export class TestService {
     private timer;
     constructor() { }
-    public refreshTokens(): BehaviorSubject<string> {
-        return Observable.interval(5000).switchMap(() => );
-    }console.log('Hello')
+    // public refreshTokens(): BehaviorSubject<string> {
+    //     return Observable.interval(5000).switchMap(() => );
+    // }console.log('Hello')
 }
