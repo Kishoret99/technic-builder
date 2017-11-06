@@ -1,7 +1,7 @@
 <div class = "container">
-    <form ngForm >
+    <form ngForm="form" >
     <div class="row">
-    <div class="col-md-2"><label for="name">NAME</label></div>
+    <div class="col-md-2"><label class="labelCustom" for="name">NAME</label></div>
     <div class="col-md-6">
     <input 
     class="form-control" 
@@ -20,6 +20,6 @@
     id="name"
     placeholder="Enter your email">
 
-<button class = "btn btn-primary btn-lg"(click)=onClick()></button>
+<button class = "btn btn-primary btn-lg" (click)=onClick('form')></button>
 </form>
 </div>
